@@ -1,0 +1,76 @@
+/* CSS para login, register y rememberpass
+--------------------------------------------- */
+.nosession-page {
+
+  padding-left: 0px;
+  padding-right: 0px;
+
+  .nosession__logo {
+    text-align: center;
+    opacity: .7; // FIXME when logo is right
+  }
+
+  .nosession__form {
+    width: 100%;
+    padding: 0px;
+
+    &--error {
+      text-align: center;
+      font-size: .9em;
+      transition: .5s opacity;
+    }
+
+    &__input {
+      padding: 1.5em 1em;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, .3);
+
+      &--noborder {
+        border-bottom: 0px;
+      }
+
+      input {
+        text-align: center;
+
+        &::placeholder{
+          color: rgba(255, 255, 255, .7)!important;
+        }
+      }
+    }
+
+    &__btn__group {
+      display : flex;
+      flex-direction: row;
+
+      .nosession__form__btn {
+        flex: 1 1 auto;
+      }
+    }
+
+    &__btn {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.15);
+      border: 0px;
+      height: 2.5em;
+      font-size: 1.5em;
+      color: rgba(255, 255, 255, 0.7);
+
+      &+.nosession__form__btn__group {
+        border-top: 1px solid rgba(255, 255, 255, .3);
+      }
+
+      a {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        font-size: .6em;
+
+      }
+    }
+
+    &__link a {
+      color: white;
+      text-decoration: none;
+    }
+
+  }
+}

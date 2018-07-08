@@ -1,0 +1,50 @@
+{
+  "name": "poesize-app",
+  "version": "0.1.0",
+  "description": "Mobile App for Poesize, an imaginary social network",
+  "productName": "Poesize App",
+  "cordovaId": "org.poesize.app",
+  "author": "lmfresneda <lmiguelfresneda@gmail.com>",
+  "scripts": {
+    "lint": "eslint --ext .js,.vue src",
+    "test": "echo \"No test specified\" && exit 0",
+    "dev:quasar": "quasar dev -m cordova -T android --device",
+    "dev:tools": "vue-devtools",
+    "dev": "run-p dev:tools dev:quasar"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "linkify-it": "^2.0.3",
+    "mention-hashtag": "^1.1.0",
+    "metascraper": "^3.10.4",
+    "module": "^1.2.5",
+    "vue-cropperjs": "^2.2.0",
+    "vue-i18n": "^7.6.0"
+  },
+  "devDependencies": {
+    "@vue/devtools": "^1.1.0",
+    "babel-eslint": "8.2.2",
+    "eslint": "4.18.2",
+    "eslint-config-standard": "10.2.1",
+    "eslint-friendly-formatter": "3.0.0",
+    "eslint-loader": "1.7.1",
+    "eslint-plugin-import": "2.9.0",
+    "eslint-plugin-node": "5.2.0",
+    "eslint-plugin-promise": "3.7.0",
+    "eslint-plugin-standard": "3.0.1",
+    "eslint-plugin-vue": "4.3.0",
+    "node-sass": "^4.8.3",
+    "npm-run-all": "^4.1.2",
+    "quasar-cli": "^0.15.14",
+    "sass-loader": "^7.0.1"
+  },
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.6.0"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "not ie <= 10"
+  ]
+}

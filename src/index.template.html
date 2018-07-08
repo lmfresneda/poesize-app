@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% if (!htmlWebpackPlugin.options.ctx.prod) { %>
+      <script>
+        window.__VUE_DEVTOOLS_HOST__ = 'XXX.XXX.XXX.XXX'
+        window.__VUE_DEVTOOLS_PORT__ = '8098' // default: 8098
+      </script>
+      <script async defer src="http://XXX.XXX.XXX.XXX:8098"></script>
+    <% } %>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width<% if (htmlWebpackPlugin.options.ctx.mode.cordova) { %>, viewport-fit=cover<% } %>">
+    <title><%= htmlWebpackPlugin.options.productName %></title>
+
+    <link rel="icon" href="statics/app-logo.png" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="statics/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="statics/icons/favicon-16x16.png">
+
+    <%= htmlWebpackPlugin.options.headScripts %>
+
+  </head>
+  <body>
+    <% if (!htmlWebpackPlugin.options.ctx.mode.electron) { %>
+      <noscript>
+        This is your fallback content in case JavaScript fails to load.
+      </noscript>
+    <% } %>
+
+    <!-- DO NOT touch the following <div> -->
+    <div id="q-app"></div>
+
+    <!-- DO NOT touch the following -->
+    <%= htmlWebpackPlugin.options.bodyScripts %>
+
+    <!-- built files will be auto injected here -->
+  </body>
+</html>

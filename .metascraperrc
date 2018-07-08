@@ -1,0 +1,9 @@
+{
+  "rules": [
+    "metascraper-description",
+    "metascraper-image",
+    "metascraper-logo",
+    "metascraper-title",
+    "metascraper-url"
+  ]
+}
